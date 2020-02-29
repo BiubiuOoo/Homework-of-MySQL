@@ -142,3 +142,43 @@
 	DESC t_dept1;
 ```
 ![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/13.png?raw=true)
+
+#### 6.修改字段
+
+##### 修改字段的数据类型
+**执行命令如下:**
+
+```SQL
+	DESC t_dept1;		# 查看表的内容
+	ALTER TABLE t_dept1 
+		MODIFY Tel INT; # 在表的最后面增加字段
+	DESC t_dept1;
+```
+##### 执行上面SQL语句结果显示如图所示：
+![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/14.png?raw=true)
+
+##### 同时修改字段的名字和数据类型
+**执行命令如下:**
+
+```SQL
+	DESC t_dept1;		# 查看表的内容
+	ALTER TABLE t_dept1 
+		CHANGE dname Dname VARCHAR(10);  # 将字段名dname修改为Dname且数据类型变为VARCHAR(10)
+	DESC t_dept1;
+```
+##### 执行上面SQL语句结果显示如图所示：
+![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/15.png?raw=true)
+
+##### 修改字段的顺序
+**执行命令如下:**
+
+```SQL
+	DESC t_dept1;		# 查看表的内容
+	ALTER TABLE t_dept1 
+		MODIFY  deptno INT(11) AFTER loc;   # 将字段名deptno放到字段loc前面	
+	DESC t_dept1;
+```
+##### 执行上面SQL语句结果显示如图所示：
+![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/16.png?raw=true)
+
+

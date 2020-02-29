@@ -108,9 +108,10 @@
 **执行命令如下:**
 
 ```SQL
-	DESC t_dept1;		#查看表的内容
+	DESC t_dept1;		# 查看表的内容
 	ALTER TABLE t_dept1 
-		ADD Tel VARCHAR(20); #在表的最后面增加字段
+		ADD Tel VARCHAR(20); # 在表的最后面增加字段
+	DESC t_dept1;
 ```
 ##### 执行上面SQL语句结果显示如图所示：
 ![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/10.png?raw=true) 
@@ -118,7 +119,8 @@
 ```SQL
 	DESC t_dept1;		
 	ALTER TABLE t_dept1 
-		ADD Aname VARCHAR(10) FIRST, #在表的最前面增加字段
+		ADD Aname VARCHAR(10) FIRST, # 在表的最前面增加字段
+	DESC t_dept1;
 ```
 ##### 执行上面SQL语句结果显示如图所示：
 ![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/11.png?raw=true)
@@ -127,7 +129,8 @@
 	DESC t_dept1;
 	ALTER TABLE t_dept1 
 		ADD Bname VARCHAR(10)
-			AFTER dname; #在指定字段位置dname后增加字段
+			AFTER dname; # 在指定字段位置dname后增加字段
+	DESC t_dept1;
 ```
 ##### 执行上面SQL语句结果显示如图所示：
 ![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/12.png?raw=true)

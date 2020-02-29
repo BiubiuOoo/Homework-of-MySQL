@@ -187,4 +187,17 @@
 ##### 执行上面SQL语句结果显示如图所示：
 ![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/16.png?raw=true)
 
+### 四、操作表的约束
+**执行命令如下:**
 
+```SQL
+	CREATE TABLE t_dept2(
+ 	deptno INT NOT NULL,  # 设置非空约束(NOT NULL,NK)
+	dname VARCHAR(20) DEFAULT 'Petter', # 设置字段的默认值(DEFAULT)
+	cname VARCHAR(20) UNIQUE,	#设置委员约束（UNIQUE,UK）
+	loc VARCHAR(40)， 
+	number INT PRIMARY KEY AUTO_INCREMENT	#设置字段自动增加
+	); 
+```
+##### 执行上面SQL语句结果显示如图所示：
+![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/17.png?raw=true) 

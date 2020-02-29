@@ -90,3 +90,52 @@
 ##### 执行上面SQL语句结果显示如图所示：
 ![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/8.png?raw=true) 
 
+#### 4.修改表名
+
+**执行命令如下:**
+
+```SQL
+	ALTER TABLE t_dept RENAME t_dept1;  # 将表明 t_dept 变为 t_dept1
+	SHOW TABLE;	# 查看数据库biu1中的全部表
+	DESC t_dept;	# 查看表对象t_dept
+	DESC t_dept1;	# 查看表对象t_dept1
+```
+##### 执行上面SQL语句结果显示如图所示：
+![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/9.png?raw=true) 
+
+#### 5.增加字段和删除字段
+
+**执行命令如下:**
+
+```SQL
+	DESC t_dept1;		#查看表的内容
+	ALTER TABLE t_dept1 
+		ADD Tel VARCHAR(20); #在表的最后面增加字段
+```
+##### 执行上面SQL语句结果显示如图所示：
+![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/10.png?raw=true) 
+
+```SQL
+	DESC t_dept1;		
+	ALTER TABLE t_dept1 
+		ADD Aname VARCHAR(10) FIRST, #在表的最前面增加字段
+```
+##### 执行上面SQL语句结果显示如图所示：
+![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/11.png?raw=true)
+
+```SQL
+	DESC t_dept1;
+	ALTER TABLE t_dept1 
+		ADD Bname VARCHAR(10)
+			AFTER dname; #在指定字段位置dname后增加字段
+```
+##### 执行上面SQL语句结果显示如图所示：
+![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/12.png?raw=true)
+
+```SQL
+	DESC t_dept1;
+	ALTER TABLE t_dept1 
+		DROP Bname; # 删除字段
+	DESC t_dept1;
+```
+![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/13.png?raw=true)

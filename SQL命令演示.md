@@ -163,7 +163,7 @@
 ```SQL
 	DESC t_dept1;		# 查看表的内容
 	ALTER TABLE t_dept1 
-		CHANGE dname Dname VARCHAR(10);  # 将字段名dname修改为Dname且数据类型变为VARCHAR(10)
+		CHANGE dname Dname VARCHAR(10);  # 将字段dname修改为Dname且数据类型变为VARCHAR(10)
 	DESC t_dept1;
 ```
 ##### 执行上面SQL语句结果显示如图所示：
@@ -175,7 +175,7 @@
 ```SQL
 	DESC t_dept1;		# 查看表的内容
 	ALTER TABLE t_dept1 
-		MODIFY  deptno INT(11) AFTER loc;   # 将字段名deptno放到字段loc前面	
+		MODIFY  deptno INT(11) AFTER loc;   # 将字段deptno放到字段loc前面	
 	DESC t_dept1;
 ```
 ##### 执行上面SQL语句结果显示如图所示：

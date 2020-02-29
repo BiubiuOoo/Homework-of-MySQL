@@ -5,8 +5,8 @@
 
 **执行命令如下:**
 
-```MySQL
-	> CREATE DATABASE biu1;   # biu1为数据库名称
+```SQL
+	CREATE DATABASE biu1;   # biu1为数据库名称
 ```
 ##### 执行上面SQL语句结果显示如图所示：
 ![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/1.png?raw=true)
@@ -15,9 +15,9 @@
 
 **执行命令如下：**
 
-```MySQL
-	> SHOW DATABASES; 	# 显示全部数据库
-	> USE biu1;		# 选择biu1数据库
+```SQL
+	SHOW DATABASES; 	# 显示全部数据库
+	USE biu1;		# 选择biu1数据库
 ```
 ##### 执行上面SQL语句结果显示如图所示：
 ![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/2.png?raw=true)
@@ -26,7 +26,7 @@
 
 **执行命令如下：**
 
-```MySQL
+```SQL
 	DROP DATABASE biu1; 	# 删除biu1数据库
 ```
 ##### 执行上面SQL语句结果显示如图所示：
@@ -37,7 +37,7 @@
 
 **执行命令如下:**
 
-```MySQL
+```SQL
 	SHOW ENGINES;  
 ```
 ##### 执行上面SQL语句结果显示如图所示：
@@ -58,7 +58,7 @@
 
 **执行命令如下:**
 
-```MySQL
+```SQL
 	CREATE TABLE t_dept(
  	deptno INT,
 	dname VARCHAR(20),
@@ -72,7 +72,7 @@
 
 **执行命令如下:**
 
-```MySQL
+```SQL
 	DESCRIBE t_dept;	# 查看表的定义
 	SHOW CREATE TABLE t_dept; 	 # 查看表的详细定义
 ```
@@ -83,7 +83,7 @@
 
 **执行命令如下:**
 
-```MySQL
+```SQL
 	DROP TABLE t_dept;	#删除表t_dept
 	DESCRIBE t_dept;      #查看表t_dept是否存在
 ```

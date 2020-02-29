@@ -22,7 +22,7 @@
 ##### 执行上面SQL语句结果显示如图所示：
 ![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/2.png?raw=true)
 
-#### 3.删除数据库数据库：
+#### 3.删除数据库：
 
 **执行命令如下：**
 
@@ -43,7 +43,7 @@
 ##### 执行上面SQL语句结果显示如图所示：
 ![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/4.png?raw=true) 
 
-#### 2.查看默认存储引擎
+#### 2.查看默认的存储引擎
 
 **执行命令如下:**
 

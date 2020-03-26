@@ -1,0 +1,12 @@
+## 输出我、我的老板、我的老板的老板
+
+
+#### 1.创建一个新的数据库
+
+**执行命令如下:**
+
+```SQL
+	CREATE DATABASE biu1;   # biu1为数据库名称
+```
+##### 执行上面SQL语句结果显示如图所示：
+![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/1.png?raw=true)

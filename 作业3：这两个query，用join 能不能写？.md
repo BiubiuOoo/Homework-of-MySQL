@@ -8,11 +8,4 @@ select sal from t_employee2 WHERE ename='SMITH');
 select * from t_employee2 WHERE (sal, job) = (
 select sal,job from t_employee2 where ename = 'smith');
 ```
-#### 2.用join的写法
-**执行命令如下:**
-
-```SQL
-
-```
-##### 执行上面SQL语句结果显示如图所示：
-![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/26.png?raw=true)
+#### 我感觉可以用join写出来，但是感觉比这个更复杂，研究了很久，没研究出来该怎么写，老师可以讲讲吗？：）

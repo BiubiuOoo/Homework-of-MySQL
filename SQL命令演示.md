@@ -201,3 +201,56 @@
 ```
 ##### 执行上面SQL语句结果显示如图所示：
 ![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/17.png?raw=true) 
+
+### 五、数据的操作
+#### 1.插入数据记录
+
+**执行命令如下:**
+
+```SQL
+	INSERT INTO t_dept1(Aname,Dname,loc,deptno,Tel)
+		values('Kangkang','Lisa','Zhejiang',0123,0235221);
+	INSERT INTO t_dept1(Aname,Dname,loc,deptno,Tel)
+		values('Xuxin','Laowang','Chongqing',0124,0235222);
+	SELECT * FROM T_DEPT1;  #查询表的数据记录
+##### 执行上面SQL语句结果显示如图所示：
+![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/20.png?raw=true)
+
+#### 2.同时插入多条数据记录
+
+**执行命令如下:**
+
+```SQL
+	INSERT INTO t_dept1(Aname,Dname,loc,deptno,Tel)
+	values	('Kangkang','Lisa','Zhejiang',0123,0235221),
+		('Xuxin','Laowang','Chongqing',0124,0235222),
+		('Yguang','Laoba','Chongqing',0125,0235223);
+	SELECT * FROM T_DEPT1;  #查询表的数据记录
+##### 执行上面SQL语句结果显示如图所示：
+![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/21.png?raw=true)
+
+#### 3.将一个表的记录插入另一个表中
+
+**执行命令如下:**
+
+```SQL
+	#创建一个新的表t_loader,其中的字段类型与t_dept1一样
+	create table t_loader(
+	Aname varchar(10),
+	Cname varchar(10),
+	loc varchar(40),
+	deptno int,
+	Tel int
+	);		
+	#给t_loader中插入记录
+	INSERT INTO t_loader(Aname,Cname,loc,deptno,Tel)
+	values	('Qiuqiu','Hanhan','Shanghai',0126,0235221),
+		('Xubao','Xiaohong','Sichuan',0128,0235222);
+	SELECT * FROM t_loader;  #查询表的数据记录
+	#将t_loader中的部分记录插入t_dept1中
+	INSERT INTO t_dept1(Aname,loc,Tel)
+		SELECT Cname,loc,Tel
+		FROM t_loader;
+	SELECT * FROM t_dept1;
+##### 执行上面SQL语句结果显示如图所示：
+![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/22.png?raw=true)

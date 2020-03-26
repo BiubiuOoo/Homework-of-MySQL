@@ -213,6 +213,7 @@
 	INSERT INTO t_dept1(Aname,Dname,loc,deptno,Tel)
 		values('Xuxin','Laowang','Chongqing',0124,0235222);
 	SELECT * FROM T_DEPT1;  #查询表的数据记录
+```
 ##### 执行上面SQL语句结果显示如图所示：
 ![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/20.png?raw=true)
 
@@ -226,6 +227,7 @@
 		('Xuxin','Laowang','Chongqing',0124,0235222),
 		('Yguang','Laoba','Chongqing',0125,0235223);
 	SELECT * FROM T_DEPT1;  #查询表的数据记录
+```
 ##### 执行上面SQL语句结果显示如图所示：
 ![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/21.png?raw=true)
 
@@ -251,6 +253,7 @@
 	INSERT INTO t_dept1(Aname,loc,Tel)
 		SELECT Cname,loc,Tel
 		FROM t_loader;
-	SELECT * FROM t_dept1;
+	SELECT * FROM t_dept1;    ##查询表的数据记录
+```
 ##### 执行上面SQL语句结果显示如图所示：
 ![](https://github.com/BiubiuOoo/Homework-of-MySQL/blob/master/images/22.png?raw=true)

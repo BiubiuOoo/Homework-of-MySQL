@@ -157,7 +157,7 @@
 ```SQL
 	DESC t_dept1;		# 查看表的内容
 	ALTER TABLE t_dept1 
-		MODIFY Tel INT; # 在表的最后面增加字段
+		MODIFY Tel INT; # 修改属性Tel的数据类型
 	DESC t_dept1;
 ```
 ##### 执行上面SQL语句结果显示如图所示：

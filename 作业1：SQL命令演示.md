@@ -194,7 +194,7 @@
 	CREATE TABLE t_dept2(
  	deptno INT NOT NULL,  # 设置非空约束(NOT NULL,NK)
 	dname VARCHAR(20) DEFAULT 'Petter', # 设置字段的默认值(DEFAULT)
-	cname VARCHAR(20) UNIQUE,	#设置委员约束（UNIQUE,UK）
+	cname VARCHAR(20) UNIQUE,	#设置唯一约束（UNIQUE,UK）
 	loc VARCHAR(40)， 
 	number INT PRIMARY KEY AUTO_INCREMENT	#设置字段自动增加
 	); 

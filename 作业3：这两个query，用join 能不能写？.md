@@ -32,7 +32,7 @@ select sal from t_employee2 WHERE ename='SMITH');                   #第一个qu
 
 ```SQL
 select * from t_employee2 WHERE (sal, job) = (
-select sal,job from t_employee2 where ename = 'smith');                 #第一个query
+select sal,job from t_employee2 where ename = 'smith');                 #第二个query
 
 select t1.deptno,t1.empno,t1.ename,t1.job,t1.MGR,t1.Hiredate,t1.sal,t1.comm          #挑选显示的内容
             from t_employee2 t1 inner join t_employee2 t2 

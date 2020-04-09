@@ -121,7 +121,7 @@
 ```SQL
 	DESC t_dept1;		
 	ALTER TABLE t_dept1 
-		ADD Aname VARCHAR(10) FIRST, # 在表的最前面增加字段
+		ADD Aname VARCHAR(10) FIRST; # 在表的最前面增加字段
 	DESC t_dept1;
 ```
 ##### 执行上面SQL语句结果显示如图所示：
